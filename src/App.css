@@ -1,0 +1,22 @@
+.dark{
+   background-color: #1c2025;
+   color:white
+}
+.light{
+  background-color: #f2f2f2;
+  color: black;
+}
+body{
+  font-family: 'Ubuntu', sans-serif;
+}
+:where(.css-dev-only-do-not-override-gzal6t).ant-switch:not(.ant-switch-disabled) {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.ant-drawer-header{
+  visibility: hidden;
+}
+
+li{
+  cursor: pointer;
+}
