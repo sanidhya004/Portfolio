@@ -9,8 +9,8 @@ const Projects = ({theme}) => {
         </div>
         <div className='flex sm:flex-row flex-col sm:px-4 gap-3 px-1'>
             <ProjectCard theme={theme} name={"PayNRent"}/>
-            <ProjectCard theme={theme} name={"PayNRent"}/>
-            <ProjectCard theme={theme} name={"PayNRent"}/>
+            <ProjectCard theme={theme} name={"Promptopia"}/>
+            <ProjectCard theme={theme} name={"KadPharmaceuticals"}/>
             
         </div>
        

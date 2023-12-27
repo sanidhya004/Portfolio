@@ -15,7 +15,7 @@ function App() {
 
   return (
     <>
-     <div className={bg?"light":"dark"} >
+     <div className={bg?"light ":"dark"} >
       <NavBar handlebg={handlebg} theme={bg}/>
       <HomePage theme={bg}/>
      </div>

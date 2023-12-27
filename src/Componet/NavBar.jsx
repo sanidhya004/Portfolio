@@ -37,7 +37,7 @@ const NavBar = ({handlebg,theme}) => {
 
             <ul className='sm:hidden flex justify-end'>
                <FaBars onClick={showDrawer} />
-             <Drawer title="Basic Drawer" placement="right" onClose={onClose} open={open} width={200} style={{backgroundColor:"transparent",color:`${text}`}}>
+             <Drawer title="Basic Drawer" placement="right" onClose={onClose} open={open} width={290} style={{backgroundColor:"transparent",color:"white"}}>
                
                <ul className="font-bold text-2xl " >
                 <li className='my-3'>About</li>

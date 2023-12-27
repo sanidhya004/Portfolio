@@ -1,6 +1,7 @@
 .dark{
    background-color: #1c2025;
-   color:white
+   color:white;
+   
 }
 .light{
   background-color: #f2f2f2;
@@ -14,9 +15,13 @@ body{
 }
 
 .ant-drawer-header{
-  visibility: hidden;
+ visibility: hidden;
 }
 
 li{
   cursor: pointer;
+}
+body{
+  margin:0;
+  padding: 0;
 }
