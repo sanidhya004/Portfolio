@@ -3,14 +3,14 @@ import React from 'react'
 const Hero = ({theme}) => {
   return (
     <>
-    <div className='flex sm:flex-row flex-col gap-4 '>
+    <div className='flex sm:flex-row flex-col gap-4 ' id="abt">
       <div>
       <img src="code.png" className='sm:h-[200px] h-[100px]' />
       </div>
       <div className='flex flex-col justify-center items-start  w-fit gap-6 '>
           <p className={theme?'sm:text-6xl text-3xl font-extrabold text-[#10637D]':'sm:text-6xl text-3xl font-bold text-white'}>Sanidhya Sharma</p>
           <p className='sm:text-3xl  text-xl font-semibold'>Transforming ideas into functional,elegant solution</p>
-          <button className={theme?'bg-[#10637D] text-white p-3 rounded-md mt-3 font-semibold':'bg-[#10F0FC] text-black p-3 rounded-md mt-3 font-semibold'}>Download Resume.</button>
+         <a href='https://docs.google.com/document/d/1bu_l_ibQWp_ZKGD9KKDyVJEZ6dWhGLNo/edit?usp=sharing&ouid=112585873483213253362&rtpof=true&sd=true'> <button className={theme?'bg-[#10637D] text-white p-3 rounded-md mt-3 font-semibold':'bg-[#10F0FC] text-black p-3 rounded-md mt-3 font-semibold'}>View Resume.</button></a>
       </div>
       </div>
 

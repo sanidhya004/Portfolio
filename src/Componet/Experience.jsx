@@ -3,7 +3,7 @@ import CardExp from './CardExp'
 
 const Experience = ({theme}) => {
   return (
-    <div className='py-9 flex flex-col gap-4'>
+    <div className='py-9 flex flex-col gap-4' id="exp">
         <div>
         <p className={theme?'text-3xl text-[#10637D] font-semibold':"text-3xl font-semibold"}>Experience</p>
         </div>
