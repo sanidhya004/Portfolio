@@ -54,3 +54,7 @@ body{
 .ant-modal-footer{
   visibility: hidden;
 }
+
+.ant-switch-inner{
+  background-color: darkgray;
+}
