@@ -82,12 +82,12 @@ const NavBar = ({handlebg,theme}) => {
             <ul className='sm:hidden flex justify-end'>
                <FaBars onClick={showModal} />
                <Modal title="Basic Modal" open={isModalOpen}  onCancel={handleCancel}>
-               <ul className="font-bold text-base  text-center" >
+               <ul className="font-bold text-base  text-right flex flex-col justify-center items-end h-full gap-4" >
                <li onClick={handleClickScrollAbt}>About</li>
                 <li onClick={handleClickScrollProj}>Projects</li>
                 <li onClick={handleClickScrollExp}>Experience</li>
-                <li className='flex justify-center py-3 gap-2'>
-                <Switch checkedChildren="Dark" unCheckedChildren="Light" onChange={handlebg} />
+                <li className='flex justify-end py-3 gap-2'>
+                <Switch checkedChildren="Dark" unCheckedChildren="Light" onChange={handlebg}  size="large"/>
                 </li>
                 
                </ul>
