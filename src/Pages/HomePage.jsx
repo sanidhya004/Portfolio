@@ -1,5 +1,6 @@
 import React from 'react'
 import Experience from '../Componet/Experience'
+import Footer from '../Componet/Footer'
 import Hero from '../Componet/Hero'
 import Projects from '../Componet/Projects'
 
@@ -10,6 +11,7 @@ const HomePage = ({theme}) => {
       <Hero theme={theme}/>
       <Experience theme={theme}/>
       <Projects theme={theme}/>
+     
 
     </div>
   )

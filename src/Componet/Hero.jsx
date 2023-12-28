@@ -16,7 +16,10 @@ const Hero = ({theme}) => {
 
       <div>
         <p className={theme?'text-3xl text-[#10637D] font-semibold':"text-3xl font-semibold"}>About</p>
-        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+        <p>
+Hey, I'm Sanidhya, a MERN stack developer deeply immersed in the world of coding and football. With a passion for crafting seamless web experiences, I bring ideas to life through the magic of code. Off the screen, I'm a fervent football enthusiast, analyzing matches and cheering for my favorite teams.
+
+My tech journey started with a love for innovation and problem-solving, and I thrive on the dynamic challenges of web development. Just as on the field where strategies unfold, I enjoy translating that excitement into meticulous code. Beyond coding, catch me kicking the ball around, discussing the latest football tactics, and soaking in the energy of the game. Join me on this dual adventure of coding and football fandom, where creativity meets the thrill of the game!</p>
       </div>
 
       <div className='flex sm:px-4 gap-9 flex-wrap justify-center px-9'>

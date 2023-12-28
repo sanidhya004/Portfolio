@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import HomePage from './Pages/HomePage'
 import NavBar from './Componet/NavBar'
+import Footer from './Componet/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
      <div className={bg?"light ":"dark"} >
       <NavBar handlebg={handlebg} theme={bg}/>
       <HomePage theme={bg}/>
+      <Footer/>
      </div>
     </>
   )
