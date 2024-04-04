@@ -12,7 +12,7 @@ const ProjectCard = ({theme,name,desc,demo,git}) => {
 
       <div className='right-0 absolute bottom-3 flex justify-end items-end gap-4 px-3 text-xs'>
           {demo?<a href={demo}><button>Live Demo</button></a>:<></>} 
-           <button className='text-xl'><FaGithub/></button>
+           {git && <button className='text-xl'><FaGithub/></button>}
 
       </div>
         

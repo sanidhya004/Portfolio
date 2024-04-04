@@ -14,6 +14,11 @@ const Experience = ({theme}) => {
 
 "Integrated Stripe API for payment gateway",
 "Enhanced website security with JWT authentication"]}/>
+        <CardExp theme={theme}  Role={"Full Stack Developer"}  comp={"Quantum IT Innovations"} obj={["Worked on Real World Projects incooperating the knowledge of backend technologies and frotend technologies"
+,"Interacted with clients in order to understand the vision that they have for their projects and shaping it into delivarable project",
+
+"Created various middlewares in projects",
+"Worked closely with the UI/UX team to ensure delivery of a figma acccurate frontend"]}/>
            
         </div>
        
