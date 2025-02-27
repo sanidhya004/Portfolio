@@ -5,13 +5,23 @@ import './App.css'
 import HomePage from './Pages/HomePage'
 import NavBar from './Componet/NavBar'
 import Footer from './Componet/Footer'
+import { useEffect } from 'react'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
-  const[bg,setBg]=useState(true)
+  const[bg,setBg]=useState(localStorage.getItem("bg"))
+
+  useEffect(()=>{
+    
+     const isDarkMode = JSON.parse(localStorage.getItem("bg") || "false");
+    
+     setBg(isDarkMode)
+  },[])
   const handlebg=()=>{
+     localStorage.setItem("bg",!bg)
      setBg(!bg)
+     
   }
 
   return (

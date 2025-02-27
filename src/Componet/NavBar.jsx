@@ -3,6 +3,7 @@ import {FaBars,FaCode, FaMoon, FaSun} from 'react-icons/fa'
 import { useState } from 'react';
 import { Button, Drawer,Modal } from 'antd';
 import { Switch } from 'antd';
+import { ArrowDown } from 'lucide-react';
 
 const NavBar = ({handlebg,theme}) => {
 
@@ -97,6 +98,12 @@ const NavBar = ({handlebg,theme}) => {
             </ul>
         </div>
     </div>
+   
+
+
+   
+
+
   )
 }
 

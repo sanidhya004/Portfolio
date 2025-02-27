@@ -58,3 +58,408 @@ body{
 .ant-switch-inner{
   background-color: darkgray;
 }
+
+.infinite-scroll-wrapper {
+  width: 200%;
+  display: flex;
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .animate-scroll {
+    animation: none;
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Container */
+.container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* Typography */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.display {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Border Radius */
+.border-lg {
+  border-radius: var(--radius);
+}
+
+.border-md {
+  border-radius: calc(var(--radius) - 2px);
+}
+
+.border-sm {
+  border-radius: calc(var(--radius) - 4px);
+}
+
+/* Colors */
+.border {
+  border-color: hsl(var(--border));
+}
+
+.input {
+  border-color: hsl(var(--input));
+}
+
+.ring {
+  outline: hsl(var(--ring)) solid 1px;
+}
+
+.background {
+  background-color: hsl(var(--background));
+}
+
+.foreground {
+  color: hsl(var(--foreground));
+}
+
+/* Primary Colors */
+.primary {
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+/* Secondary Colors */
+.secondary {
+  background-color: hsl(var(--secondary));
+  color: hsl(var(--secondary-foreground));
+}
+
+/* Destructive Colors */
+.destructive {
+  background-color: hsl(var(--destructive));
+  color: hsl(var(--destructive-foreground));
+}
+
+/* Muted Colors */
+.muted {
+  background-color: hsl(var(--muted));
+  color: hsl(var(--muted-foreground));
+}
+
+/* Accent Colors */
+.accent {
+  background-color: hsl(var(--accent));
+  color: hsl(var(--accent-foreground));
+}
+
+/* Popover */
+.popover {
+  background-color: hsl(var(--popover));
+  color: hsl(var(--popover-foreground));
+}
+
+/* Card */
+.card {
+  background-color: hsl(var(--card));
+  color: hsl(var(--card-foreground));
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: hsl(var(--sidebar-background));
+  color: hsl(var(--sidebar-foreground));
+}
+
+.sidebar-primary {
+  background-color: hsl(var(--sidebar-primary));
+  color: hsl(var(--sidebar-primary-foreground));
+}
+
+.sidebar-accent {
+  background-color: hsl(var(--sidebar-accent));
+  color: hsl(var(--sidebar-accent-foreground));
+}
+
+.sidebar-border {
+  border-color: hsl(var(--sidebar-border));
+}
+
+.sidebar-ring {
+  outline: hsl(var(--sidebar-ring)) solid 1px;
+}
+
+/* Animations */
+@keyframes accordion-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+@keyframes scale-in {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes hover-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Applying Animations */
+.accordion-down {
+  animation: accordion-down 0.2s ease-out;
+}
+
+.accordion-up {
+  animation: accordion-up 0.2s ease-out;
+}
+
+.fade-in {
+  animation: fade-in 0.4s ease-out;
+}
+
+.slide-in-right {
+  animation: slide-in-right 0.3s ease-out;
+}
+
+.slide-in-bottom {
+  animation: slide-in-bottom 0.5s ease-out;
+}
+
+.scale-in {
+  animation: scale-in 0.3s ease-out;
+}
+
+.hover-bounce {
+  animation: hover-bounce 1s ease-in-out infinite;
+}
+
+.scroll-left {
+  animation: scroll-left 25s linear infinite;
+}
+
+.scroll-right {
+  animation: scroll-right 25s linear infinite;
+}
+
+/* Bento Grid */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .bento-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .bento-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/* Bento Item */
+.bento-item {
+  border-radius: 0.75rem;
+  border: 1px solid hsl(var(--border));
+  background-color: hsl(var(--card));
+  padding: 1.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.bento-item:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Bento Item Sizes */
+.bento-item-sm {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+@media (min-width: 768px) {
+  .bento-item-sm {
+    grid-column: span 2;
+  }
+}
+
+.bento-item-md {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+@media (min-width: 768px) {
+  .bento-item-md {
+    grid-column: span 2;
+  }
+}
+
+.bento-item-lg {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+@media (min-width: 768px) {
+  .bento-item-lg {
+    grid-column: span 4;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bento-item-lg {
+    grid-column: span 3;
+  }
+}
+
+.bento-item-xl {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+@media (min-width: 768px) {
+  .bento-item-xl {
+    grid-column: span 4;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bento-item-xl {
+    grid-column: span 4;
+  }
+}
+
+.bento-item-full {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+@media (min-width: 768px) {
+  .bento-item-full {
+    grid-column: span 4;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bento-item-full {
+    grid-column: span 6;
+  }
+}
+
