@@ -151,7 +151,7 @@ const Projects = ({theme}) => {
             <div className="h-full flex flex-col items-center justify-center text-center">
               <p className="text-lg mb-4">Want to see more of my work?</p>
               <a 
-                href="https://github.com" 
+                href="https://github.com/sanidhya004" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 border-2 border-primary rounded-md font-medium text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
