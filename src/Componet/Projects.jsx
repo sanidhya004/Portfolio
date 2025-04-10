@@ -9,7 +9,7 @@ const Projects = ({theme}) => {
       image: "https://images.unsplash.com/photo-1662383729882-e03ce8e00887?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       technologies: [ "Next.js" , "Typescript" , "Convex" , "Stripe" , "Clerk"],
       githubLink: "https://github.com/sanidhya004/Tickiting",
-      liveLink: "https://tickiter-q9qb92m7t-sanidhyas-projects.vercel.app/"
+      liveLink: "https://tickiter.vercel.app/"
     },
     {
       title: "Promptopia",
